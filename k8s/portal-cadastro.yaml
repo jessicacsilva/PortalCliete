@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: portal-cadastro
+  labels:
+    app: portal-cadastro
+spec:
+  containers:
+    - name: portal-cadastro-container
+      image: jessicasilva/portal2:latest
+      ports:
+        - containerPort: 80

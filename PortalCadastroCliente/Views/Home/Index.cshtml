@@ -1,0 +1,23 @@
+﻿@model List<ClienteModel>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">E-mail</th>
+            <th scope="col">Endereço</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cliente in Model)
+        {
+            <tr>
+                <th scope="row">1</th>
+                <td>@cliente.Name</td>
+                <td>@cliente.Email</td>
+                <td>@cliente.Adress</td>
+            </tr>
+        }      
+    </tbody>
+</table>

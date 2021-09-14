@@ -1,0 +1,6 @@
+# Build runtime image
+FROM mcr.microsoft.com/dotnet/aspnet:3.1
+LABEL version="1.0" maintainer="Jessica Cruz"
+WORKDIR /app
+COPY /dist .
+ENTRYPOINT ["dotnet", "PortalCadastroCliente.dll"]
